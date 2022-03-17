@@ -1,0 +1,64 @@
+else
+    {
+        System.out.println("RefNumber");
+    }
+    
+}
+
+public void setrefNumber(String ref)
+{
+    if(refNumber.length()>=3)
+    {
+        refNumber = ref;
+    }
+    else
+    {
+        System.out.println("Error: RefNumber should be 3 or more charachters");
+    }
+    refNumber = ref;
+}
+
+public String getRefNumber()
+{
+    return refNumber;
+}
+
+private boolean loanBook()
+{
+    return onLoan;
+}
+
+private int loancount()
+{
+    return LoanCount;
+}
+
+private void borrow()
+{
+    if(onLoan == false)
+    {
+        onLoan = true;
+        LoanCount++;
+    }
+    else
+    {
+        System.out.println("the book is currently on loan so it can not be borrowed now ");
+    }
+    
+    }
+
+    
+    private void returnbook()
+{
+    if(onLoan == true)
+    {
+        onLoan = false;
+        LoanCount++;
+    }
+    else
+    {
+        System.out.println("a loaned out book can not be returned");
+    }
+    
+}
+}
